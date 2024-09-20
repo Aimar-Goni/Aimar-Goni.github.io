@@ -1,0 +1,30 @@
+[
+    {
+        "title": "LowBatt",
+        "labels": ["Unreal Engine"],
+        "description": "Top-down shooter game, made in UE 5.2.",
+        "link": "lowbatt",
+        "image": "../resources/lowbatt.png"
+    },
+    {
+        "title": "Vorpal Engine",
+        "labels": ["C++", "OpenGL"],
+        "description": "A proprietary engine written in C++ that uses OpenGL, and integrates VR, portals, and advanced rendering techniques.",
+        "link": "vorpal",
+        "image": "../resources/vorpal.png"
+    },
+    {
+        "title": "Beat The Beat",
+        "labels": ["Unity", "VR"],
+        "description": "A innovative rhythm game using VR motion-sensors, made with the Unity engine.",
+        "link": "btb",
+        "image": "../resources/btb.png"
+    },
+    {
+        "title": "AI Nature Simulation",
+        "labels": ["Unreal Engine"],
+        "description": "A small nature simulation implementing base behavior and evolution of deers.",
+        "link": "aisim",
+        "image": "../resources/aisim.png"
+    }
+]

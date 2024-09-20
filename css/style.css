@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+    
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: #F3F4F5;
+}
+
+.decoration-wave {
+    position: relative;
+    top: -1rem; 
+    width: 100%;
+    line-height: 0;
+    z-index: -1;
+}
+
+.decoration-wave svg {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #273036;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links .active-menu{
+    text-decoration: underline;
+}
+
+.menu-icon{
+    display: none;
+    background-color: #A2D9FF;
+    padding: 0.6rem 20px;
+    position: fixed;
+    width: 100%;
+    top: 3.6rem;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-icon a{
+    padding-left: 1.3rem;
+}
+
+.link-nav{
+    color: white;
+}
+
+.link-nav:hover{
+    text-decoration: underline;
+}
+
+/* Main */
+.hello{
+    margin-top: -6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello h1{
+    align-self: center;
+}
+
+.hello span{
+    font-weight: 800;
+}
+
+.hello p{
+    font-size: 2rem;
+}
+
+.hello p .hydrated{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hello a:hover {
+    color: #A2D9FF;
+}
+
+.btn{
+    padding: 0.7rem 1rem;
+    text-align: center;
+    border-color: #273036;
+    border-radius: 1rem;
+    border-style: solid;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none; 
+    color: #273036; 
+}
+
+.btn:hover{
+    color: #A2D9FF;
+    border-color: #A2D9FF;
+
+}
+
+.division-with-img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10rem 2rem 2rem 2rem;
+}
+
+.division-with-img-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 40rem;
+    margin: 0rem 2rem 2rem 2rem;
+}
+
+.content-info{
+    flex: 1;
+    padding: 1rem;
+}
+
+.content-info h2{
+    font-size: 2.2rem;
+}
+
+.content-picture{
+    padding: 1rem;
+    flex: 0.6;
+    align-content: center;
+}
+
+.content-picture img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.content-picture iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.label{
+    border-color: #273036;
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.7rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+.more-information:hover a{
+    text-decoration: underline;
+}
+
+.project-shows{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-selection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-selection .btn{
+    margin: 0 0.3rem 0 0.3rem;
+}
+
+.title-web{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: -12rem;
+}
+
+.name-user{
+    color: #A2D9FF;
+    font-weight: 700;
+}
+
+@media (max-width: 1290px) {
+    .hello{
+        margin-top: -1rem;
+    }
+
+    .decoration-wave {
+        top: -0.01rem; 
+    }
+
+    .division-with-img{
+        margin: -4rem 2rem 2rem 2rem;
+    }
+
+    .title-web{
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hello{
+        margin-top: 0rem;
+    }
+
+    .division-with-img{
+        margin: 0rem 2rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .division-with-img-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .nav-links{
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+
+    .hello h1{
+        padding: 1rem;
+    }
+
+    .title-web{
+        margin-top: 0;
+    }
+
+    .btn-selection{
+        flex-wrap: wrap;
+    }
+
+}
