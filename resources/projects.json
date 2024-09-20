@@ -1,21 +1,21 @@
 [
     {
         "title": "LowBatt",
-        "labels": ["Unreal Engine"],
+        "labels": ["Unreal Engine","C++"],
         "description": "Top-down shooter game, made in UE 5.2.",
         "link": "lowbatt",
         "image": "../resources/lowbatt.png"
     },
     {
         "title": "AI Nature Simulation",
-        "labels": ["Unreal Engine"],
+        "labels": ["Unreal Engine","C++","VR"],
         "description": "A small nature simulation implementing base behavior and evolution of deers.",
         "link": "aisim",
         "image": "../resources/aisim.png"
     },
     {
         "title": "Vorpal Engine",
-        "labels": ["C++", "OpenGL"],
+        "labels": ["C++", "OpenGL","VR"],
         "description": "A proprietary engine written in C++ that uses OpenGL, and integrates VR, portals, and advanced rendering techniques.",
         "link": "vorpal",
         "image": "../resources/vorpal.png"
