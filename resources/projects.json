@@ -7,19 +7,20 @@
         "image": "../resources/lowbatt.png"
     },
     {
-        "title": "Vorpal Engine",
-        "labels": ["C++", "OpenGL"],
-        "description": "A proprietary engine written in C++ that uses OpenGL, and integrates VR, portals, and advanced rendering techniques.",
-        "link": "vorpal",
-        "image": "../resources/vorpal.png"
-    },
-    {
         "title": "AI Nature Simulation",
         "labels": ["Unreal Engine"],
         "description": "A small nature simulation implementing base behavior and evolution of deers.",
         "link": "aisim",
         "image": "../resources/aisim.png"
     },
+    {
+        "title": "Vorpal Engine",
+        "labels": ["C++", "OpenGL"],
+        "description": "A proprietary engine written in C++ that uses OpenGL, and integrates VR, portals, and advanced rendering techniques.",
+        "link": "vorpal",
+        "image": "../resources/vorpal.png"
+    },
+    
     {
         "title": "Beat The Beat",
         "labels": ["Unity", "VR"],
