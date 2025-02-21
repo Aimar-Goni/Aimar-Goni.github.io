@@ -7,6 +7,13 @@
         "image": "../resources/lowbatt.png"
     },
     {
+        "title": "Medieval Sim",
+        "labels": ["Unreal Engine","C++"],
+        "description": "A AI-driven medieval life simulation built in Unreal Engine, focusing on resource management and intelligent NPC behavior.",
+        "link": "medsim",
+        "image": "../resources/medsim.png"
+    },
+    {
         "title": "AI Nature Simulation",
         "labels": ["Unreal Engine","C++","VR"],
         "description": "A small nature simulation implementing base behavior and evolution of deers.",
