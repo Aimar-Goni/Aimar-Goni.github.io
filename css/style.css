@@ -427,3 +427,13 @@ a {
         font-size: 0.9rem;
     }
 }
+
+.main-info {
+    background-color: rgba(128, 128, 128, 0.5); /* Grey with 50% transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional: rounded corners */
+    text-align: center; /* Centers text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
