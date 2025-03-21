@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poiret+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-    
+/* General Styles */
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
@@ -66,11 +65,11 @@ body {
     text-decoration: underline;
 }
 
-.nav-links .active-menu{
+.nav-links .active-menu {
     text-decoration: underline;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
     background-color: #A2D9FF;
     padding: 0.6rem 20px;
@@ -81,20 +80,20 @@ body {
     z-index: 1;
 }
 
-.menu-icon a{
+.menu-icon a {
     padding-left: 1.3rem;
 }
 
-.link-nav{
+.link-nav {
     color: white;
 }
 
-.link-nav:hover{
+.link-nav:hover {
     text-decoration: underline;
 }
 
-/* Main */
-.hello{
+/* Main Content */
+.hello {
     margin-top: -6rem;
     width: 100%;
     display: flex;
@@ -103,19 +102,19 @@ body {
     align-items: center;
 }
 
-.hello h1{
+.hello h1 {
     align-self: center;
 }
 
-.hello span{
+.hello span {
     font-weight: 800;
 }
 
-.hello p{
+.hello p {
     font-size: 2rem;
 }
 
-.hello p .hydrated{
+.hello p .hydrated {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -124,7 +123,7 @@ body {
     color: #A2D9FF;
 }
 
-.btn{
+.btn {
     padding: 0.7rem 1rem;
     text-align: center;
     border-color: #273036;
@@ -135,58 +134,58 @@ body {
     display: flex;
     align-items: center;
 }
-a{
+
+a {
     text-decoration: none; 
     color: #273036; 
 }
 
-.btn:hover{
+.btn:hover {
     color: #A2D9FF;
     border-color: #A2D9FF;
-
 }
 
-.division-with-img{
+.division-with-img {
     display: flex;
     flex-wrap: wrap;
     margin: -10rem 2rem 2rem 2rem;
 }
 
-.division-with-img-2{
+.division-with-img-2 {
     display: flex;
     flex-wrap: wrap;
     flex: 40rem;
     margin: 0rem 2rem 2rem 2rem;
 }
 
-.content-info{
+.content-info {
     flex: 1;
     padding: 1rem;
 }
 
-.content-info h2{
+.content-info h2 {
     font-size: 2.2rem;
 }
 
-.content-picture{
+.content-picture {
     padding: 1rem;
     flex: 0.6;
     align-content: center;
 }
 
-.content-picture img{
+.content-picture img {
     width: 100%;
     height: auto;
     border-radius: 1rem;
 }
 
-.content-picture iframe{
+.content-picture iframe {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
 }
 
-.label{
+.label {
     border-color: #273036;
     border-radius: 0.6rem;
     padding: 0.4rem 0.7rem;
@@ -196,27 +195,27 @@ a{
     margin-right: 0.4rem;
 }
 
-.more-information:hover a{
+.more-information:hover a {
     text-decoration: underline;
 }
 
-.project-shows{
+.project-shows {
     display: flex;
     flex-wrap: wrap;
 }
 
-.btn-selection{
+.btn-selection {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
 }
 
-.btn-selection .btn{
+.btn-selection .btn {
     margin: 0 0.3rem 0 0.3rem;
 }
 
-.title-web{
+.title-web {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -224,66 +223,9 @@ a{
     margin-top: -12rem;
 }
 
-.name-user{
+.name-user {
     color: #A2D9FF;
     font-weight: 700;
-}
-
-@media (max-width: 1290px) {
-    .hello{
-        margin-top: -1rem;
-    }
-
-    .decoration-wave {
-        top: -0.01rem; 
-    }
-
-    .division-with-img{
-        margin: -4rem 2rem 2rem 2rem;
-    }
-
-    .title-web{
-        margin-top: 0rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .hello{
-        margin-top: 0rem;
-    }
-
-    .division-with-img{
-        margin: 0rem 2rem 2rem 2rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .division-with-img-2{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .nav-links{
-        display: none;
-    }
-
-    .menu-icon{
-        display: flex;
-    }
-
-    .hello h1{
-        padding: 1rem;
-    }
-
-    .title-web{
-        margin-top: 0;
-    }
-
-    .btn-selection{
-        flex-wrap: wrap;
-    }
-
 }
 
 /* Video Background */
@@ -307,22 +249,6 @@ a{
     object-fit: cover;
 }
 
-/* Ensure other content is above the video */
-.hello, .project-buttons, .decoration-wave {
-    position: relative;
-    z-index: 1;
-}
-
-/* Main Hello Section */
-.hello {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-}
-
 /* Project Buttons */
 .project-button-left, .project-button-right {
     position: absolute;
@@ -333,11 +259,11 @@ a{
 }
 
 .project-button-left {
-    left: 20px;
+    left: 20%;
 }
 
 .project-button-right {
-    right: 20px;
+    right: 20%;
 }
 
 .project-btn {
@@ -374,4 +300,130 @@ a{
 
 .project-btn:hover {
     transform: scale(1.05);
+}
+
+.project-button-left,
+.project-button-right {
+    flex: 1;
+    max-width:40%; /* Adjust as needed */
+}
+
+.project-button-left {
+    text-align: center;
+}
+
+.project-button-right {
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1290px) {
+    .hello {
+        margin-top: -1rem;
+    }
+
+    .decoration-wave {
+        top: -0.01rem; 
+    }
+
+    .division-with-img {
+        margin: -4rem 2rem 2rem 2rem;
+    }
+
+    .title-web {
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hello {
+        margin-top: 0rem;
+    }
+
+    .division-with-img {
+        margin: 0rem 2rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .division-with-img-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .hello h1 {
+        padding: 1rem;
+    }
+
+    .title-web {
+        margin-top: 0;
+    }
+
+    .btn-selection {
+        flex-wrap: wrap;
+    }
+
+    .project-button-left, .project-button-right {
+        position: static;
+        transform: none;
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .project-btn {
+        width: 100%;
+        height: 150px; /* Adjust as needed */
+    }
+
+    .project-btn iframe {
+        height: 150px; /* Adjust as needed */
+    }
+
+    .project-btn span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hello h1 {
+        font-size: 1.5rem;
+    }
+
+    .hello p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .content-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .label {
+        font-size: 0.7rem;
+    }
+
+    .project-btn {
+        height: 120px; /* Adjust as needed */
+    }
+
+    .project-btn iframe {
+        height: 120px; /* Adjust as needed */
+    }
+
+    .project-btn span {
+        font-size: 0.9rem;
+    }
 }
