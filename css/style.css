@@ -94,14 +94,17 @@ body {
 }
 
 /* Main */
-.hello{
-    margin-top: -6rem;
-    width: 100%;
+.hello {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
 }
+
 
 .hello h1{
     align-self: center;
@@ -374,4 +377,36 @@ a{
 
 .project-btn:hover {
     transform: scale(1.05);
+}
+
+.project-button-left,
+.project-button-right {
+    flex: 1;
+    max-width: 200px; /* Adjust as needed */
+}
+
+.project-button-left {
+    text-align: left;
+}
+
+.project-button-right {
+    text-align: right;
+}
+
+.main-content {
+    flex: 2;
+    text-align: center;
+    padding: 0 20px; /* Adjust as needed */
+}
+
+.project-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
