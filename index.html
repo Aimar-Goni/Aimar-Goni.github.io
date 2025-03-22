@@ -37,63 +37,34 @@
     <!-- YouTube Video Background -->
     <div id="video-container">
         <div id="video-overlay"></div>
-        <div id="video-background"></div>
-      </div>
-
-      <script>
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      
-        var player;
-        function onYouTubeIframeAPIReady() {
-          player = new YT.Player('video-background', {
-            width: '100%',
-            height: '100%',
-            videoId: 'TU00sDo5lag',
-            playerVars: {
-              autoplay: 1,
-              mute: 1,
-              controls: 0,
-              modestbranding: 1,
-              showinfo: 0,
-              rel: 0,
-              loop: 1,
-              playlist: 'TU00sDo5lag',
-              cc_load_policy: 0 /* Disable subtitles */
-            },
-            events: {
-              'onStateChange': onPlayerStateChange
-            }
-          });
-        }
-      
-        function onPlayerStateChange(event) {
-          if (event.data === YT.PlayerState.ENDED) {
-            player.seekTo(0);
-          }
-        }
-      </script>
+        <iframe 
+            id="video-background" 
+            src="https://www.youtube.com/embed/TU00sDo5lag?enablejsapi=1&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=TU00sDo5lag&fs=0&cc_load_policy=0" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
 
     <div class="hello">
 
+        <!-- Project Buttons -->
         <div class="project-button-left">
             <a href="/projects/medsim/index.html" class="main-info">
-
                 <h1>Latest Project</h1>
-  
             </a>
             <a href="/projects/medsim/index.html" class="project-btn">
                 <span>Medieval Sim</span>
                 <iframe 
-                    src="https://www.youtube.com/embed/ZVnJn8qweJM?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&version=3&loop=1&playlist=ZVnJn8qweJM" 
+                    id="video-left" 
+                    src="https://www.youtube.com/embed/ZVnJn8qweJM?enablejsapi=1&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=ZVnJn8qweJM&fs=0&cc_load_policy=0" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             </a>
         </div>
+
 
         <div class="main-info">
             <h1>Hi, I'm <span>Aimar Goñi Benito</span></h1>
@@ -114,23 +85,63 @@
         
         <div class="project-button-right">
             <a href="/projects/lowbatt/index.html" class="main-info">
-
                 <h1>Biggest Project</h1>
-
             </a>
-
             <a href="/projects/lowbatt/index.html" class="project-btn">
                 <iframe 
-                src="https://www.youtube.com/embed/TU00sDo5lag?autoplay=1&mute=1&loop=1&controls=0&loop=1&playlist=TU00sDo5lag" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-            <span>Low Batt</span>
+                    id="video-right" 
+                    src="https://www.youtube.com/embed/TU00sDo5lag?enablejsapi=1&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=TU00sDo5lag&fs=0&cc_load_policy=0" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <span>Low Batt</span>
             </a>
         </div>
 
-
+        <script>
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+            var playerBackground, playerLeft, playerRight;
+        
+            function onYouTubeIframeAPIReady() {
+                playerBackground = new YT.Player('video-background', {
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+        
+                playerLeft = new YT.Player('video-left', {
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+        
+                playerRight = new YT.Player('video-right', {
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+        
+            function onPlayerReady(event) {
+                if (event.target === playerBackground) {
+                    event.target.playVideo();
+                }
+            }
+        
+            function onPlayerStateChange(event) {
+                if (event.data === YT.PlayerState.ENDED) {
+                    event.target.playVideo();
+                }
+            }
+        </script>
     </div>
     
 </div>
