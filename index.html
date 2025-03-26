@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimar Goñi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Game Developer specializing in AI, gameplay, and graphics programming">
+    <meta name="keywords" content="Game Developer, Portfolio, Unreal Engine, Unity, C++">
+    <meta name="author" content="Aimar Goñi Benito">
+    <link rel="icon" href="resources/Logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="resources/Logo.png" alt="Logo">
+            <span><a href="/" class="link-nav">Aimar Goñi</a></span>
+        </div>  
+        <button class="menu-toggle" id="mobile-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>      
+        <ul class="nav-links" id="nav-links">
+            <li>
+                <a href="/about-me">
+                    <ion-icon name="person-outline"></ion-icon>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="/projects" class="active-menu">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    Projects
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="video-container">
+        <div id="video-overlay"></div>
+        <iframe 
+            id="video-background" 
+            src="https://www.youtube.com/embed/TU00sDo5lag?enablejsapi=1&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=TU00sDo5lag&fs=0&cc_load_policy=0" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+        <div class="main-content-wrapper">
+            <!-- Left Project Card -->
+            <div class="side-project-card left-card">
+                <div class="project-card">
+                        <div class="project-media">
+                            <iframe 
+                            id="video-left" 
+                            src="https://www.youtube.com/embed/ZVnJn8qweJM?enablejsapi=1&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=ZVnJn8qweJM&fs=0&cc_load_policy=0" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    
+                        <div class="image-overlay">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">C++</span>
+                        </div>
+                        <h3>Medieval Sim</h3>
+                        <p>AI-driven medieval life simulation</p>
+                        <a href="/projects/medsim/index.html" class="project-link">
+                            View Project <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Center Hero Content -->
+            <div class="hero-content-wrapper">
+                <section class="hero">
+    
+                    
+                    <div class="hero-content fade-in">
+                        <h1>Aimar Goñi Benito</h1>
+                        <h3 class="fade-in delay-1">Game Developer | AI & Graphics Specialist</h3>
+                        
+                        <div class="social-links fade-in delay-2">
+                            <a href="https://www.linkedin.com/in/aimar-goñi-9a3301227/" target="_blank" class="fab fa-linkedin-in">
+                          
+                            </a>
+                            <a href="https://github.com/Aimar-Goni" target="_blank" class="fab fa-github-alt">
+                      
+                            </a>
+                            <a href="https://x.com/AimarGoniDev" target="_blank" class="fab fa-twitter">
+            
+                            </a>
+                        </div>
+
+                        <a class="btn fade-in delay-3" href="resources/CV.pdf" target="_blank">
+                            <ion-icon name="document-text-outline"></ion-icon> View Resume
+                        </a>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Right Project Card -->
+            <div class="side-project-card right-card">
+                <div class="project-card">
+                    <div class="project-media">
+                        <iframe 
+                            id="video-right" 
+                            src="https://www.youtube.com/embed/TU00sDo5lag?enablejsapi=1&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=TU00sDo5lag&fs=0&cc_load_policy=0" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="image-overlay">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Steam</span>
+                        </div>
+                        <h3>Low Batt</h3>
+                        <p>Bullet hell top-down shooter</p>
+                        <a href="/projects/lowbatt/index.html" class="project-link">
+                            View Project <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    
+
+ 
+
+        <script type="module" src="https://unpkg.com/ionicons@7.2.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.2.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+        var playerBackground, playerLeft, playerRight;
+    
+        function onYouTubeIframeAPIReady() {
+            playerBackground = new YT.Player('video-background', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+    
+            playerLeft = new YT.Player('video-left', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+    
+            playerRight = new YT.Player('video-right', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+    
+        function onPlayerReady(event) {
+            if (event.target === playerBackground) {
+                event.target.playVideo();
+            }
+        }
+    
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.ENDED) {
+                event.target.playVideo();
+            }
+        }
+    </script>
+</body>
+</html>

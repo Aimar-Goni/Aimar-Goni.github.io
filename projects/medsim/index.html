@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Medieval Sim | Aimar Goñi</title>
+    <meta name="description" content="Medieval Sim project by Aimar Goñi - AI-driven medieval life simulation">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../resources/Logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="resources/Logo.png" alt="Logo">
+            <span><a href="/" class="link-nav">Aimar Goñi</a></span>
+        </div>  
+        <button class="menu-toggle" id="mobile-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>      
+        <ul class="nav-links" id="nav-links">
+            <li>
+                <a href="/about-me">
+                    <ion-icon name="person-outline"></ion-icon>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="/projects" class="active-menu">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    Projects
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="section">
+        <header class="project-header">
+            <h1>Medieval Sim</h1>
+            <div class="tags">
+                <span class="tag">Unreal Engine</span>
+                <span class="tag">C++</span>
+            </div>
+            <p>AI-driven medieval life simulation</p>
+        </header>
+
+        <div class="project-content">
+            <div class="project-hero">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZVnJn8qweJM?si=mA__DeQkjOkD6v81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="project-details">
+                <section class="detail-section">
+                    <h2><ion-icon name="sparkles-outline"></ion-icon> Project Overview</h2>
+                    <p>AG_AIMedievalSim is an AI-driven medieval life simulation built in Unreal Engine, focusing on resource management and intelligent NPC behavior. The project explores how AI characters interact with their environment, gather resources, and complete tasks in a historically inspired medieval setting.</p>
+                </section>
+
+                <section class="detail-section">
+                    <h2><ion-icon name="star-outline"></ion-icon> Key Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>Autonomous AI Agents</strong> - NPCs make decisions based on available resources, environmental conditions, and predefined goals.</li>
+                        <li><strong>Dynamic Resource System</strong> - Implemented via AMS_ResourceSystem, handling resource collection, depletion, and regeneration.</li>
+                        <li><strong>Inventory Management</strong> - AI interacts with an InventoryComponent, managing collected resources effectively.</li>
+                        <li><strong>Task-Oriented AI</strong> - Characters pursue specific quests like gathering wood, berries, or water.</li>
+                    </ul>
+                </section>
+
+                <div class="project-media-grid">
+                    <div class="project-media-item">
+                        <img src="../../resources/projects/medsim-1.jpg" alt="AI Behavior">
+                    </div>
+                    <div class="project-media-item">
+                        <img src="../../resources/projects/medsim-2.jpg" alt="Resource System">
+                    </div>
+                    <div class="project-media-item">
+                        <img src="../../resources/projects/medsim-3.jpg" alt="Environment">
+                    </div>
+                </div>
+
+                <section class="detail-section">
+                    <h2><ion-icon name="bulb-outline"></ion-icon> Technical Challenges</h2>
+                    <p>One of the core challenges was managing delegate binding for AI events, ensuring smooth communication between AI components and the resource system. By refining event-driven architecture, I optimized AI responsiveness and decision-making.</p>
+                </section>
+
+                <div class="project-actions">
+                    <a class="btn" href="/resources/AG_Development_Journal_Prototype.md" target="_blank">
+                        <ion-icon name="document-text-outline"></ion-icon> Documentation
+                    </a>
+                    <a class="btn back-button" href="/projects">
+                        <ion-icon name="arrow-back-outline"></ion-icon> Back to Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

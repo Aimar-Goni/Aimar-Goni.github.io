@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Beat The Beat | Aimar Goñi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Beat The Beat project by Aimar Goñi - VR rhythm game for Meta Quest 2">
+    <link rel="icon" href="../../resources/Logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="resources/Logo.png" alt="Logo">
+            <span><a href="/" class="link-nav">Aimar Goñi</a></span>
+        </div>  
+        <button class="menu-toggle" id="mobile-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>      
+        <ul class="nav-links" id="nav-links">
+            <li>
+                <a href="/about-me">
+                    <ion-icon name="person-outline"></ion-icon>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="/projects" class="active-menu">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    Projects
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="section">
+        <header class="project-header">
+            <h1>Beat The Beat</h1>
+            <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">VR</span>
+            </div>
+            <p>VR rhythm game for Meta Quest 2</p>
+        </header>
+
+        <div class="project-content">
+            <div class="project-hero">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wjDx6oIw_RA?si=BhYTocCTy0EMSfjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="project-details">
+                <section class="detail-section">
+                    <h2><ion-icon name="sparkles-outline"></ion-icon> Project Overview</h2>
+                    <p>VR Unity game developed for the Meta Quest 2 VR Headset. This project was developed by Carlos Cordero and myself (3 months | March 2023 - May 2023).</p>
+                    <p>In this pseudo-rhythm game, the player has to hit the different balls thrown at them. The bounces off the walls and timing of the balls match the music of each level.</p>
+                </section>
+
+                <section class="detail-section">
+                    <h2><ion-icon name="star-outline"></ion-icon> Development Focus</h2>
+                    <p>This project focused on enhancing the game feel and responsiveness of the experience as much as possible, making good use of:</p>
+                    <ul class="feature-list">
+                        <li><strong>Haptics</strong> - Controller feedback for hits and misses</li>
+                        <li><strong>Visual Effects</strong> - Snappy particles for impact feedback</li>
+                        <li><strong>Sound Design</strong> - Rhythmic audio cues matching gameplay</li>
+                        <li><strong>Intuitive Controls</strong> - Easy to pick up and play</li>
+                    </ul>
+                </section>
+
+                <div class="project-media-grid">
+                    <div class="project-media-item">
+                        <img src="../../resources/projects/beat-1.jpg" alt="Gameplay Screenshot">
+                    </div>
+                    <div class="project-media-item">
+                        <img src="../../resources/projects/beat-2.jpg" alt="Level Design">
+                    </div>
+                    <div class="project-media-item">
+                        <img src="../../resources/projects/beat-3.jpg" alt="VR Interaction">
+                    </div>
+                </div>
+
+                <section class="detail-section">
+                    <h2><ion-icon name="construct-outline"></ion-icon> My Contributions</h2>
+                    <ul class="feature-list">
+                        <li>Implemented core ball mechanics and physics</li>
+                        <li>Developed UI/UX systems for VR interaction</li>
+                        <li>Optimized performance for Meta Quest 2</li>
+                        <li>Created particle effects and visual feedback</li>
+                        <li>Designed levels and gameplay flow</li>
+                    </ul>
+                </section>
+
+                <div class="project-actions">
+                    <a class="btn" href="/resources/Beat_The_Beat_DesignDoc.pdf" target="_blank">
+                        <ion-icon name="document-text-outline"></ion-icon> Design Documentation
+                    </a>
+                    <a class="btn back-button" href="/projects">
+                        <ion-icon name="arrow-back-outline"></ion-icon> Back to Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
