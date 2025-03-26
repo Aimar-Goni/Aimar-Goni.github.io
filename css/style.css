@@ -1081,3 +1081,60 @@
 .nav-links .active-menu ion-icon {
   color: var(--accent-teal);
 }
+
+/* Remove the mobile menu toggle styles */
+.menu-toggle {
+  display: none !important;
+}
+
+/* Keep nav-links always visible */
+.nav-links {
+  display: flex !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+  gap: 2rem !important;
+}
+
+/* Adjust navbar for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+  
+  .logo span {
+    font-size: 1.1rem;
+  }
+}
+
+/* For very small screens, you might want to reduce the gap further */
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  .logo span {
+    font-size: 1rem;
+  }
+}
