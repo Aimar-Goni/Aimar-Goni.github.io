@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
             "title": "Vorpal Engine",
             "description": "Custom game engine with VR support and portals",
             "labels": ["C++", "OpenGL", "VR"],
-            "link": "/projects/vorpal-engine/index.html",
+            "link": "/projects/vorpal/index.html",
             "image": "../resources/vorpal.png"
         },
           {
             "title": "Beat The Beat",
             "description": "VR rhythm game for Meta Quest 2",
             "labels": ["Unity", "VR"],
-            "link": "/projects/beat-the-beat/index.html",
+            "link": "/projects/btb/index.html",
             "image": "../resources/btb.png"
         },
           {
